@@ -55,3 +55,318 @@ Universal Styling
 
 ===========================*/
 
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	background-color: #4E4E4E;
+	height: 6em;
+}
+
+h1 {
+	color: #0000000;
+	margin: .2em;
+	font-size: 1.25em;
+	font-family: dazzle-unicase, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 1.25em;
+	padding: .2em;
+	font-family: dazzle-unicase, sans-serif;
+	font-style: bold;
+
+}
+
+h3 {
+	font-size: 1.5em;
+	padding: .2em;
+}
+
+h4 {
+	font-size: 1.25em;
+	padding: .2em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 150%;
+	margin: .25em;
+	padding: .5em;
+}
+
+
+/*==================
+
+Header Styling
+
+===================*/
+
+.logo {
+	float: left;
+	width: 32%;
+	vertical-align: top;
+	margin: .5em;
+}
+
+.logo img {
+	max-width: 80%;
+}
+
+.big-logo img [alt="horizontal logo"] {
+    display: none;
+}
+
+/*=========================
+
+Hamburger Navigation
+
+=========================*/
+
+#hamitems {
+    position: sticky;
+    top: 0;
+}
+
+#navright {
+    float: right;
+    width: 40%;
+    vertical-align: top;
+    text-align: right;
+    font-size: 1em;
+}
+
+#navright label {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 3em;
+    padding: .5em;
+}
+
+#hamitems a{
+    display:block;
+	color: #000000;
+    text-decoration: none;
+    padding: .25em;
+}
+
+#hamitems {
+    display: none;
+}
+
+#navright input:checked ~ #hamitems {
+    display: block;
+}
+
+#hamburger {
+    display: none;
+}
+
+/*================================
+
+Hero Styling
+
+================================*/
+
+img .hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.hero img[alt="kids swim lessons"] {
+    display: none;
+}
+
+/*==================
+
+Footer Styling
+
+===================*/
+
+footer {
+	display: block;
+	background-color:#4E4E4E;;
+	width: 100%;
+	height: 6em;
+}
+
+.footp {
+	color: white;
+	font-size: 1em;
+}
+
+/*====================
+
+Body Styling
+
+===================*/
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+button a{
+	text-decoration: none;
+	font-size: medium;
+	color: #000000;
+	font-family: dazzle-unicase, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+button {
+	margin: .75em;
+	background-color:#ffffff;
+	border-radius: 1em;
+	width: 60%;
+	
+}
+
+section {
+	background-color: #EAEBFB;
+}
+
+/*===============================
+
+Media Queries
+
+=================================*/
+
+@media screen and (min-width: 320px) {
+   
+  
+
+}
+
+
+@media screen and (min-width: 576px){
+
+    .logo img {
+        width: 60%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    figcaption{
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 768px){
+    
+    .logo img {
+        width: 30%;
+    }
+
+    #navright {
+        width: 70%;
+        line-height: 1.7em;
+    }
+
+    #hamitems {
+        display: flex;
+        float: right;
+    }
+
+    #hamitems li {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 2em;
+        text-align: center;
+		
+    }
+
+    #hamitems a {
+        border-top:none;
+        display: block;
+        padding: .5em;
+		color:#ffffff;
+    }
+
+    #navright label {
+        display: none;
+	}
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 992px)  {
+
+	#hamitems li {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 2em;
+        text-align: center;
+		
+    }
+
+    #hamitems a {
+        border-top:none;
+        display: block;
+        padding: .5em;
+		color:#ffffff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 1200px){
+
+	.logo img {
+        width: 30%;
+    }
+	h1 {
+		font-size: 2.5em;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+
+
+
+
+
+
+
+
+}
