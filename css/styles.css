@@ -69,7 +69,7 @@ header {
 h1 {
 	color: #0000000;
 	margin: .2em;
-	font-size: 1.25em;
+	font-size: 1.2em;
 	font-family: dazzle-unicase, sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -77,15 +77,18 @@ h1 {
 
 h2 {
 	font-size: 1.25em;
-	padding: .2em;
+	padding: 1em;
 	font-family: dazzle-unicase, sans-serif;
 	font-style: bold;
 
 }
 
 h3 {
-	font-size: 1.5em;
-	padding: .2em;
+	font-size: 1.2em;
+	padding: 1em;
+	font-family: din-2014-narrow, sans-serif;
+	font-weight: 200;
+	font-style: normal;
 }
 
 h4 {
@@ -95,9 +98,12 @@ h4 {
 
 p {
 	font-size: 1em;
-	line-height: 150%;
+	line-height: 200%;
 	margin: .25em;
 	padding: .5em;
+	font-family: din-2014-narrow, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 
@@ -109,7 +115,7 @@ Header Styling
 
 .logo {
 	float: left;
-	width: 32%;
+	width: 20%;
 	vertical-align: top;
 	margin: .5em;
 }
@@ -153,6 +159,9 @@ Hamburger Navigation
 	color: #000000;
     text-decoration: none;
     padding: .25em;
+	font-family: dazzle-unicase, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 #hamitems {
@@ -183,6 +192,77 @@ img .hero {
     display: none;
 }
 
+
+
+/*====================
+
+Body Styling
+
+===================*/
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+button a{
+	text-decoration: none;
+	font-size: .9em;
+	color: #000000;
+	font-family: dazzle-unicase, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+button {
+	margin: 1em;
+	background-color:#ffffff;
+	border-radius: 1.25em;
+	width: 50%;
+	background-image: linear-gradient(to right, #7AD3DC, #9498EE, #FFB5D1 );
+}
+
+section {
+	background-color: #EAEBFB;
+}
+
+section h1 {
+	padding: .2em;
+}
+
+.new-student img {
+    width: 75%;
+    padding: 1.5em;
+}
+
+/*===============================
+
+ Home Form Styling
+
+=================================*/
+
+input#femail {
+    margin: 1em;
+	border-radius: 1.25em;
+	border-color:#ffffff;
+	width: 60%;
+	font-family: din-2014-narrow, sans-serif;
+	font-size: 1em;
+	opacity: 75%;
+}
+
+input#submit {
+	margin: 1em;
+	border-radius: 1.25em;
+	background-color:#ffffff;
+	width: 30%;
+	font-family: dazzle-unicase, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-image: linear-gradient(to right, #7AD3DC, #9498EE, #FFB5D1 );
+
+}
+
 /*==================
 
 Footer Styling
@@ -201,39 +281,6 @@ footer {
 	font-size: 1em;
 }
 
-/*====================
-
-Body Styling
-
-===================*/
-
-.responsive {
-    width: 100%;
-    height: auto;
-  }
-
-button a{
-	text-decoration: none;
-	font-size: medium;
-	color: #000000;
-	font-family: dazzle-unicase, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-
-}
-
-button {
-	margin: .75em;
-	background-color:#ffffff;
-	border-radius: 1em;
-	width: 60%;
-	
-}
-
-section {
-	background-color: #EAEBFB;
-}
-
 /*===============================
 
 Media Queries
@@ -242,7 +289,19 @@ Media Queries
 
 @media screen and (min-width: 320px) {
    
-  
+ 
+	
+
+/*--------About Page MQ 320px------------*/
+
+
+/*--------Contact Page MQ 320px------------*/
+
+
+/*--------Shop Page MQ 320px------------*/
+
+
+
 
 }
 
@@ -257,16 +316,46 @@ Media Queries
         text-align: center;
     }
 
-    figcaption{
-        text-align: center;
-        font-size: 1.25em;
-    }
+    button {
+		margin: 1em;
+		background-color:#ffffff;
+		border-radius: 1.25em;
+		width: 33%;
+		text-align: center;
+		background-image: linear-gradient(to right, #7AD3DC, #9498EE, #FFB5D1 );
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 2.1em;
+		padding: .5em;
+
+	}
+
+	h3 {
+		font-size: 2em;
+		padding: 0.5em;
+	}
+
+	p {
+		font-size: 1.2em;
+	}
+
+	figure.new-student {
+		text-align: center;
+	}
 
 
+/*--------About Page MQ 576px------------*/
 
 
+/*--------Contact Page MQ 576px------------*/
 
 
+/*--------Shop Page MQ 576px------------*/
 
 
 
@@ -277,7 +366,7 @@ Media Queries
 @media screen and (min-width: 768px){
     
     .logo img {
-        width: 30%;
+        width: 45%;
     }
 
     #navright {
@@ -310,7 +399,13 @@ Media Queries
 	}
 
 
+/*--------About Page MQ 768px------------*/
 
+
+/*--------Contact Page MQ 768px------------*/
+
+
+/*--------Shop Page MQ 768px------------*/
 
 
 
@@ -336,11 +431,13 @@ Media Queries
 		color:#ffffff;
     }
 
+/*--------About Page MQ 992px------------*/
 
 
+/*--------Contact Page MQ 992px------------*/
 
 
-
+/*--------Shop Page MQ 992px------------*/
 
 
 
@@ -362,7 +459,12 @@ Media Queries
 		font-size: 1.25em;
 	}
 
+/*--------About Page MQ 1200px------------*/
 
+/*--------Contact Page MQ 1200px------------*/
+
+
+/*--------Shop Page MQ 1200px------------*/
 
 
 
