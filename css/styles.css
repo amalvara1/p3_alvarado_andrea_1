@@ -124,8 +124,12 @@ Header Styling
 	max-width: 80%;
 }
 
-.big-logo img [alt="horizontal logo"] {
-    display: none;
+.logo img[alt="circular logo"] {
+	display: block;
+}
+
+.logo img[alt="horizontal logo"] {
+	display: none;
 }
 
 /*=========================
@@ -208,18 +212,20 @@ Body Styling
 button a{
 	text-decoration: none;
 	font-size: .9em;
-	color: #000000;
+	color: #ffffff;
 	font-family: dazzle-unicase, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
 button {
-	margin: 1em;
-	background-color:#ffffff;
-	border-radius: 1.25em;
-	width: 50%;
 	background-image: linear-gradient(to right, #7AD3DC, #9498EE, #FFB5D1 );
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
 }
 
 section {
@@ -281,6 +287,74 @@ footer {
 	font-size: 1em;
 }
 
+
+/*===============================
+
+Contact Page Styling
+
+=================================*/
+  
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+	background-image: linear-gradient(to right, #7AD3DC, #9498EE, #FFB5D1 );
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+.contact-container {
+	width: 80%;
+	border-radius: 20px;
+	background-color: #EAEBFB;;
+	padding: 1em;
+	margin: 1.5em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+
+About Page Styling
+
+=================================*/
+
+
+
+
+
+
+
+
+
+
+
+
 /*===============================
 
 Media Queries
@@ -303,8 +377,8 @@ Media Queries
 
 
 
-}
 
+}
 
 @media screen and (min-width: 576px){
 
@@ -383,8 +457,7 @@ Media Queries
         flex-grow: 1;
         flex-basis: 0;
         padding: 2em;
-        text-align: center;
-		
+        text-align: center;	
     }
 
     #hamitems a {
@@ -398,6 +471,41 @@ Media Queries
         display: none;
 	}
 
+	.hero img[alt="mobile swim lesson"] {
+		display: none;
+	}
+
+	.hero img[alt="kids swim lessons"] {
+        display: block;
+    }
+
+	.logo img[alt="circular logo"] {
+		display: none;
+	}
+	
+	.logo img[alt="horizontal logo"] {
+		display: inline;
+		width: 80%;
+	}
+
+	aside {
+        display: inline;
+        width: 50%;
+        float: left;
+    }
+
+    article {
+        display: inline-block;
+        width: 50%;
+		position: relative;
+    }
+
+    article p{
+        font-size: 1em;
+        padding: 1.25em; 
+    }
+
+	
 
 /*--------About Page MQ 768px------------*/
 
@@ -416,6 +524,10 @@ Media Queries
 
 @media screen and (min-width: 992px)  {
 
+	.logo img {
+        width: 45%;
+    }
+
 	#hamitems li {
         flex-grow: 1;
         flex-basis: 0;
@@ -429,6 +541,21 @@ Media Queries
         display: block;
         padding: .5em;
 		color:#ffffff;
+    }
+
+	button {
+		width: 27%;
+		text-align: center;
+	}
+
+	.new-student img {
+        width: 80%;
+        padding: 2.5em;
+    }
+
+	article p{
+        font-size: 1.5em;
+        padding: 1.25em; 
     }
 
 /*--------About Page MQ 992px------------*/
@@ -448,16 +575,22 @@ Media Queries
 
 @media screen and (min-width: 1200px){
 
-	.logo img {
-        width: 30%;
+	.logo {
+        width: 15%;
     }
 	h1 {
 		font-size: 2.5em;
 	}
 
 	p {
-		font-size: 1.25em;
+		font-size: 1.8em;
 	}
+
+	.new-student img {
+        width: 50%;
+        padding: .5em;
+    }
+
 
 /*--------About Page MQ 1200px------------*/
 
