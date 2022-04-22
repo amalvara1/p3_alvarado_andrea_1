@@ -223,8 +223,11 @@ button {
 	color: white;
 	padding: 12px 20px;
 	border: none;
-	border-radius: 4px;
+	border-radius: 20px;
 	cursor: pointer;
+	position: relative;
+	right: -90px;
+    margin: 0.5em;
 
 }
 
@@ -345,7 +348,6 @@ Media Queries
    
  
 	
-
 /*--------About Page MQ 320px------------*/
 
 
@@ -353,9 +355,6 @@ Media Queries
 
 
 /*-------- Page MQ 320px------------*/
-
-
-
 
 
 }
@@ -375,8 +374,8 @@ Media Queries
 		background-color:#ffffff;
 		border-radius: 1.25em;
 		width: 33%;
-		text-align: center;
-		background-image: linear-gradient(to right, #7AD3DC, #9498EE, #FFB5D1 );
+		right: -160px;
+		margin: 0.75em;
 	}
 
 	h1 {
@@ -410,8 +409,6 @@ Media Queries
 
 
 /*--------Page MQ 576px------------*/
-
-
 
 
 
@@ -485,7 +482,10 @@ Media Queries
         padding: 1.25em; 
     }
 
-	
+	button {
+		right: -225px;
+		margin: 0.75em;
+	}
 
 /*--------About Page MQ 768px------------*/
 
@@ -499,9 +499,6 @@ Media Queries
 
 
 /*-------- Page MQ 768px------------*/
-
-
-
 
 
 
@@ -543,6 +540,11 @@ Media Queries
         padding: 1.25em; 
     }
 
+	button {
+		right: -250px;
+		margin: 0.75em;
+	}
+
 /*--------About Page MQ 992px------------*/
 
 
@@ -550,8 +552,6 @@ Media Queries
 
 
 /*-------- Page MQ 992px------------*/
-
-
 
 
 
@@ -569,6 +569,11 @@ Media Queries
 
 	p {
 		font-size: 1.8em;
+	}
+
+	button {
+		width: 25%;
+		right: -450px;
 	}
 
 	.new-student img {
@@ -589,9 +594,6 @@ Media Queries
 
 
 /*-------- Page MQ 1200px------------*/
-
-
-
 
 
 
