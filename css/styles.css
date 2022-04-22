@@ -275,14 +275,14 @@ Footer Styling
 
 ===================*/
 
-footer {
-	display: block;
-	background-color:#4E4E4E;;
+#footer {
+	background-color:#4E4E4E;
+	bottom: 0;
 	width: 100%;
-	height: 6em;
+	height: 6rem;            /* Footer height */
 }
 
-.footp {
+#footer p {
 	color: white;
 	font-size: 1em;
 }
@@ -326,31 +326,11 @@ input[type=submit]:hover {
 	margin: 1.5em;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*===============================
 
 About Page Styling
 
 =================================*/
-
-
-
-
-
-
-
-
 
 
 
@@ -372,7 +352,7 @@ Media Queries
 /*--------Contact Page MQ 320px------------*/
 
 
-/*--------Shop Page MQ 320px------------*/
+/*-------- Page MQ 320px------------*/
 
 
 
@@ -429,7 +409,7 @@ Media Queries
 /*--------Contact Page MQ 576px------------*/
 
 
-/*--------Shop Page MQ 576px------------*/
+/*--------Page MQ 576px------------*/
 
 
 
@@ -510,10 +490,15 @@ Media Queries
 /*--------About Page MQ 768px------------*/
 
 
+.owner img {
+	width: 80%;
+	margin: 3em;
+}
+
 /*--------Contact Page MQ 768px------------*/
 
 
-/*--------Shop Page MQ 768px------------*/
+/*-------- Page MQ 768px------------*/
 
 
 
@@ -564,7 +549,7 @@ Media Queries
 /*--------Contact Page MQ 992px------------*/
 
 
-/*--------Shop Page MQ 992px------------*/
+/*-------- Page MQ 992px------------*/
 
 
 
@@ -576,7 +561,7 @@ Media Queries
 @media screen and (min-width: 1200px){
 
 	.logo {
-        width: 15%;
+        width: 12%;
     }
 	h1 {
 		font-size: 2.5em;
@@ -587,17 +572,23 @@ Media Queries
 	}
 
 	.new-student img {
-        width: 50%;
+        width: 47%;
         padding: .5em;
     }
 
+	#footer {
+		height: 10em;
+	}
 
 /*--------About Page MQ 1200px------------*/
+
+	.owner img {
+		width: 50%;
 
 /*--------Contact Page MQ 1200px------------*/
 
 
-/*--------Shop Page MQ 1200px------------*/
+/*-------- Page MQ 1200px------------*/
 
 
 
